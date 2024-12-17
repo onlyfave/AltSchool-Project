@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: "gilroy-bold";
-  src: url(./Assets/fonts/gilroy-bold/Gilroy-Bold.ttf);
-  src: url(./Assets/fonts/gilroy-bold/Gilroy-Medium.ttf);
+  src: url(/Assets/fonts/gilroy-bold/Gilroy-Bold.ttf);
+  src: url(/Assets/fonts/gilroy-bold/Gilroy-Medium.ttf);
 }
 * {
   margin: 0;
