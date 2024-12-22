@@ -36,6 +36,15 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Deploy to server
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.Project-exam.pem}}
+        SSH_HOST: ${{ secrets.ec2-44-203-122-163.compute-1.amazonaws.com}}
+        SSH_USERNAME: ${{ secrets.ubuntu }}
+        PROJECT_PATH: ${{ secrets./home/ubuntu/var/www/html }}
       run: |
-        # Add your deployment script here (e.g., FTP, SSH, etc.)
-        echo "Deploying application..."
+        ssh -o StrictHostKeyChecking=no $SSH_USERNAME@$SSH_HOST 'bash -s' << 'EOF'
+        cd $PROJECT_PATH
+        git pull origin main
+        npm install
+        npm run build
+        EOF
