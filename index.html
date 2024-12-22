@@ -1,50 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Landing Page</title>
-    <link rel="stylesheet" href="style.css"/>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Fave's Landing Page!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
     <div class="container">
-      <header>
-        <label class="logo">FAVE</label>
-        <button class="nav-toggle" id="navToggle">&#9776;</button>
-        <nav class="nav-links">
-          <ul>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">PROJECTS</a></li>
-            <li><a href="">RESUME</a></li>
-            <li><a href="">CONTACTS</a></li>
-          </ul>
-        </nav>
-      </header>
+        <header>
+            <nav class="navbar">
+                <div class="nav-content">
+                    <div class="logo">FAVE</div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#projects">PROJECT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="home">
+            <div class="main">
+                <div class="main-text">
+                    <h1>Hi, I'm Onyeneke Favour</h1>
+                    <p>
+                        DevOps & Cloud Engineer<br>
+                        I excel in creating dynamic and user-friendly web applications.<br>
+                        A DevOps Engineer with a solid background in software development and IT operations.
+                        I focus on building efficient, automated, and scalable systems to connect development and operations for smooth integration and continuous delivery.
+                    </p>
+                    <button class="btn">Hire Me</button>
+                </div>
+                <div class="main-image">
+                    <img src="./Assets/images/a female devoper.jpg" alt="Onyeneke Favour">
+                </div>
+            </div>
 
-      <div class="main">
-        <div class="main-text">
-          <h1>Hi, I'm Onyeneke Favour</h1>
-          <p>
-            Front-End Developer / Aspiring DevOps & Cloud Engineer <br />
-            I excel in creating dynamic and user-friendly web applications.
-            <br />
-            A DevOps Engineer with a solid background in software development and IT operations.
-            I focus on building efficient, automated, and scalable systems to connect development and operations for smooth integration and continuous delivery. 
-          </p>
-          <button class="btn">Hire Me</button>
-        </div>
-        <div class="main-image">
-          <img src="./" alt="" />
-        </div>
-      </div>
+            
+        </main>
 
- 
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>As a dedicated Cloud and DevOps Engineer, I specialize in creating robust,
+                           scalable solutions that enhance operational efficiency and drive business success.</p>
+                           <div class="soft-skills">
+                            <h4>Soft Skills</h4>
+                              <ul>
+                                  <li>Collaboration</li>
+                                  <li>Leadership</li>
+                                  <li>Emotional Intelligence</li>
+                                  <li>Adaptability</li>
+                                  <li>Excellent Communication</li>
+                              </ul>  
+                    </div>
+                    </div>
+                     
+                    <div class="about-skills">
+                        <h3>My Skills</h3>
+                        <h4>Technical Skills</h4>
+                        <ul>
+                            <li>Linux Administration</li>
+                            <li>Programming and Scripting (Python, Bash-scripting)</li>
+                            <li>Version Control (Git)</li>
+                            <li>Containerization & Orchestration (Docker, Kubernetes)</li>
+                            <li>Networking & Security</li>
+                            <li>Cloud Platforms (AWS, Azure, GCP)</li>
+                            <li>Monitoring Tools</li>
+                            <li>Continuous Integration & Deployment (Jenkins, GitLab CI/CD)</li>
+                            <li>Infrastructure as Code (Terraform, Ansible)</li>
+                        </ul>
+                    </div>
+                    
+                  
+<div class="professional-experience">
+  <h3>Professional Experience</h3>
+  
+  <div class="experience-item">
+      <h4>Personal Assistant</h4>
+      <span class="duration">Duration: 1 Year</span>
+      <ul>
+          <li>Developed strong organizational skills</li>
+          <li>Enhanced capabilities in scheduling, prioritizing tasks, and attentive note-taking</li>
+      </ul>
+  </div>
+
+  <div class="experience-item">
+      <h4>IT Media Personnel</h4>
+      <ul>
+          <li>Gained hands-on skills in photography, videography, and camera handling</li>
+          <li>Managed live streaming and editing for various projects</li>
+      </ul>
+  </div>
+
+  <div class="philosophy">
+      <h4>Philosophy</h4>
+      <p>I am committed to continuous learning and professional growth, eager to explore new technologies and methodologies within the cloud and DevOps domains. I believe that the intersection of technology and effective communication is where true innovation happens, and I strive to make a meaningful impact in every project I undertake.</p>
+  </div>
+</div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>onyenekeflavour@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <p>Favour Onyeneke</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-brands fa-github"></i>
+                            <p>onlyfave</p>
+                        </div>
+                    </div>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="social-links">
+          <a href="https://x.com/onyeneke_favour" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/favour-onyeneke-2b2881297/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/onlyfave" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          <a href="https://codepen.io/onlyfave" target="_blank" rel="noopener noreferrer"><i class="fab fa-codepen"></i></a>
       </div>
-      <a href="https://x.com/onyeneke_favour"></a>
-      <a href="https://www.linkedin.com/in/favour-onyeneke-2b2881297/"></a>
-      <a href="https://github.com/onlyfave"></a>
-      <a href="https://codepen.io/onlyfave"></a>
     </div>
     <script src="script.js" defer></script>
-  </body>
+</body>
 </html>
+
